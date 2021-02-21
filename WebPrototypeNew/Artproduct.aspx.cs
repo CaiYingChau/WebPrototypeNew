@@ -13,5 +13,10 @@ namespace WebPrototypeNew
         {
 
         }
+
+        protected void Image1_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
     }
 }

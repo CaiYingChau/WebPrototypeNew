@@ -167,6 +167,14 @@
 			list-style-type: none;
 
 		}
+        .cart
+        {
+            float:right;
+            width:20px;
+            height:20px;
+            padding-right:20px;
+            padding-left:20px;
+        }
         </style>
 </head>
 <body>
@@ -177,6 +185,7 @@
                     <td class="auto-style4">
                         <img alt="" class="auto-style2" src="Images/logo.jpg" /></td>
                     <td class="login">
+                        <asp:ImageButton ID="ImageButton1" runat="server" ImageURL ="Images/cart.png" PostBackUrl="~/Cart.aspx" CssClass="cart"/>
                         <asp:Label ID="Login1" runat="server" Text="Login"><a href="Login.aspx">Sign Out</a></asp:Label>
                     </td>
                 </tr>
@@ -205,12 +214,11 @@
                    <ul>
                                 <li><a href="favourite.aspx">My Favourite List</a></li>
                                 <li><a href="OrderHistory.aspx">My Order History</a></li>
-                                <li><a href="Cart.aspx">My Cart</a></li>
                    </ul>
                </li>
            </ul>
         </div>
-    </form>
+   
 </body>
 </html>
 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
@@ -241,3 +249,4 @@
 		</div>
 		<br/><br/><br/><br/><br/><br/><br/>
         </footer>
+ </form>

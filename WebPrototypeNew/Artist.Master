@@ -80,6 +80,93 @@
         .auto-style4 {
             width: 20%;
         }
+         footer{
+			background-color:rgb(30, 30, 30);;
+			color:white;
+			line-height: 1.5em;
+			position: relative;
+			width: 100%;
+			clear: both;
+			margin: 0;
+			padding: 0;
+			border: 0;
+			vertical-align: baseline;
+			padding-top: 10%;
+		}
+          .logo{
+			opacity:0.6;
+		}
+
+		.flower{
+			margin-left: auto;
+			margin-right: auto;
+			width: 68%;
+			clear: both;
+		}
+		footer ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			border: 0;
+			font-size: 100%;
+			font: inherit;
+			vertical-align: baseline;
+		}
+
+		footer li{
+			list-style: none;
+			line-height: 1.5em;
+			margin: 0;
+			padding: 0;
+			vertical-align: baseline;
+			border: 0;
+		}
+
+		footer li a{
+			text-decoration:none;
+			color:white;
+		}
+        .fmid , .fright{
+			width: 31%;
+			float: left;
+			padding-left: 3%;
+			font-size:medium;
+		}
+
+		.fmid{
+			border-left: 1px solid;
+			border-right: 1px solid;
+		}
+		.fleft{
+			color:white;
+			width: 23%;
+			float: left;
+			padding-left: 8%;
+			font-size:medium;
+		}
+
+        .auto-style1 {
+            font-family: cursive;
+            left: 0px;
+            top: 0px;
+        }
+        .icon {
+			display: block;
+			font-family: cursive;
+            left: 0px;
+            top: 0px;
+            width: 31%;
+			float: left;
+			padding-left: 3%;
+			font-size:medium;
+		}
+        
+		.icon > ul > li {
+            float: left;
+            padding-left: 4%;
+			list-style-type: none;
+
+		}
         </style>
 </head>
 <body>
@@ -97,7 +184,7 @@
         </div>
         <div id="menu">
            <ul>
-               <li><a href="Homepage.aspx">Home</a></li>
+               <li><a href="ArtistHomepage.aspx">Home</a></li>
                <li><a href="About.aspx">About Us</a></li>
                <li><a href="UploadGallery.aspx">Upload Gallery</a></li>
                <li><a href="Artinfo.aspx">Art Info</a>
@@ -113,3 +200,30 @@
 </body>
 </html>
 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+<footer class="auto-style1">
+		<div class="flower">
+			<div class="fleft">
+			<ul>
+				
+				<li><a href="contact.aspx">About Us</a></li>
+				<li><a href="terms.aspx">Terms and Condition</a></li>
+				<li><a href="policy.aspx">Policy and Condition</a></li>
+			</ul>
+			</div>
+			<div class="fmid">
+				<ul>
+					<li><h3>For Who?</h3></li>
+					<li>Artist</li>
+					<li>Art Lover</li>
+				</ul>
+			</div>
+			<div class="fright">
+				<ul>
+					<li><h3>Need Help?</h3></li>
+					<li>Contact Us</li>
+					<li>Help Center</li>
+				</ul>
+                </div>
+		</div>
+		<br/><br/><br/><br/><br/><br/><br/>
+        </footer>

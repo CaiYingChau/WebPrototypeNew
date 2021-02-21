@@ -16,6 +16,14 @@
             width: 800px;
             height: 280px;
         }
+        .gallery {
+           text-align:center;
+            width:450px;
+            height:300px;
+        }
+        .homegallery{
+            border:none;
+        }
     </style>
     <div>
            
@@ -33,7 +41,36 @@
                         <img alt="" src="Images/homeimage.jpg" class="auto-style3" /></td>
                 </tr>
             </table>
-
+          
         </div>
-    
+    <br />
+    <br />
+    <div>
+    <table class="homegallery" style="width:100%;">
+        <tr>
+            <td>
+                <asp:Image ID="Image1" runat="server" ImageURL ="Images/1.jpg" CssClass="gallery"/>
+            </td>
+            <td>
+                <asp:Image ID="Image2" runat="server" ImageURL ="Images/2.jpg" CssClass="gallery"/>
+            </td>
+            <td>
+                <asp:Image ID="Image3" runat="server" ImageURL ="Images/3.jpg"  CssClass="gallery"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Image ID="Image4" runat="server" ImageURL ="Images/4.jpg" CssClass="gallery"/>
+            </td>
+            <td>
+                <asp:Image ID="Image5" runat="server" ImageURL ="Images/5.jpg" CssClass="gallery"/>
+            </td>
+            <td>
+                <asp:Image ID="Image6" runat="server" ImageURL ="Images/6.jpg" CssClass="gallery"/>
+            </td>
+        </tr>
+        </table> 
+    <br />
+    <br />
+</div>
 </asp:Content>

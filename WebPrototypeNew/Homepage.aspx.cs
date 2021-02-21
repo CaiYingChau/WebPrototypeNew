@@ -11,7 +11,14 @@ namespace WebPrototypeNew
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+          
         }
+
+        protected void Timer1_Tick(object sender, EventArgs e)
+        {
+
+ 
+        }
+
     }
 }
